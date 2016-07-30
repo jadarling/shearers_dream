@@ -1,4 +1,4 @@
-
+/*main text elements*/
 
 body {
     background-color: #AE9779;
@@ -10,36 +10,69 @@ body {
 
 }
 
-
-.shear{
-  position:fixed;
-}
-
-h1 {
+h1, h2, h3 {
   display: block;
-
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-.about{
-  background-color: #4C3733;
-  opacity: 0.5;
-
+h2 {
+  display: block;
+  padding 0;
+  margin-bottom: 0;
 }
-@media (max-width: 300px) {
-  h1 {
-    display:none;
+
+p {
+  text-align: left;
+  padding: 1em;
+}
+
+.blurb {
+  background-color: pink;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  margin-top: 0;
+}
+
+/*a {
+
+  padding-left 1em;
+  padding-right: 1em;
+  padding-top: 0em;
+
+}*/
+
+/*navigation styling*/
+
+nav {
+  padding-bottom: 1em;
+}
+
+
+li {
+  display: inline;
+}
+
+.fixed {
+  position:fixed;
+  top: 0;
+
+  max-width: 960px;
+  background-color: pink;:
+  margin: 0;
+  padding:0:
+}
+
+
+/*images*/
+
+  .shear{
+    position:fixed;
+    opacity: 0.8;
   }
-}
 
-  .container {
-
-    max-width: 960px;
-    min-height:÷ 200px;
-    background-color: #AE9779;
-    opacity:0.8;
-    margin: 0 auto;
-    color: #280E09;
-  }
 
 
 img {
@@ -61,13 +94,49 @@ img {
   /*max-width: 100%;*/
   /*max-width: 200px;  */
 
-  	max-width: 200px%;
+  	max-width: 100%;
   	height: auto;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    opacity: 1;
+    background-color: pink;
 
   /*max-height: 300px;
   display: block;
   margin: 0 auto;*/
 }
+
+
+
+.biophoto {
+  /*position: relative;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*top: -10px;*/
+
+  float: left;
+  padding: 1em;
+
+}
+
+
+
+@media (max-width: 300px) {
+  h1 {
+    display:none;
+  }
+}
+
+  .container {
+
+    max-width: 960px;
+    min-height: 100px;
+    background-color: #AE9779;
+    opacity:0.9;
+    margin: 0 auto;
+    color: #280E09;
+    padding: 0px;
+  }
 
 
 /*THIS IS OUR GRID SYSTEM*/
@@ -82,8 +151,8 @@ img {
 
 .col{
   float:left;
-  min-height: 200px;
-  border: 10px solid #280E09;
+  min-height: 100px;
+  /*border: 10px solid #280E09;*/
   background: #AE9779;
   -webkit-transition:1s;
   -moz-transition:1s;
@@ -126,7 +195,7 @@ img {
 
 .col-12 {
   width: 100%;
-  height: 50%;
+  /*height: 50%;*/
   }
 
 
