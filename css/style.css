@@ -10,6 +10,10 @@ body {
 
 }
 
+h1 {
+  margin-top: 0;
+}
+
 h1, h2 {
   display: block;
   padding-bottom: 0;
@@ -55,23 +59,18 @@ td p {
   margin-top: 0;
 }
 
-/*a {
 
-  padding-left 1em;
-  padding-right: 1em;
-  padding-top: 0em;
-
-}*/
 
 /*navigation styling*/
 
-nav {
-  padding-bottom: 1em;
+ul {
+  padding: 0;
+  margin: 0;
 }
-
 
 li {
   display: inline;
+  padding-bottom: 0;
 }
 
 .fixed {
@@ -79,7 +78,6 @@ li {
   top: 0;
   background-color: #AE9779;
   max-width: 960px;
-
   margin: 0;
   padding:0:
 }
