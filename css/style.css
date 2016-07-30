@@ -10,25 +10,44 @@ body {
 
 }
 
-h1, h2, h3 {
+h1, h2 {
   display: block;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-h2 {
-  display: block;
+h3 {
+  text-align: left;
+
+
   padding 0;
   margin-bottom: 0;
 }
 
 p {
+
   text-align: left;
   padding: 1em;
 }
 
+table {
+    width: 75%;
+    margin-left: 200px;
+    text-align: left;
+}
+
+
+td {
+    height: 50px;
+  vertical-align: top;
+}
+
+td p {
+  padding: 0;
+}
+
 .blurb {
-  background-color: pink;
+
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
@@ -58,9 +77,9 @@ li {
 .fixed {
   position:fixed;
   top: 0;
-
+  background-color: #AE9779;
   max-width: 960px;
-  background-color: pink;:
+
   margin: 0;
   padding:0:
 }
@@ -96,10 +115,10 @@ img {
 
   	max-width: 100%;
   	height: auto;
-    padding-top: 5em;
+    padding-top: 8em;
     padding-bottom: 2em;
     opacity: 1;
-    background-color: pink;
+
 
   /*max-height: 300px;
   display: block;
