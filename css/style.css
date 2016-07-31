@@ -1,5 +1,16 @@
 /*main text elements*/
 
+.container {
+
+  max-width: 960px;
+  min-height: 100px;
+  background-color: #AE9779;
+  opacity:0.9;
+  margin: 0 auto;
+  color: #280E09;
+  padding: 0px;
+}
+
 body {
     background-color: #AE9779;
     /*background-image: url("http://content.ngv.vic.gov.au/col-images/api/EPUB001683/1280");*/
@@ -22,16 +33,15 @@ h1, h2 {
 
 h3 {
   text-align: left;
-
-
   padding 0;
   margin-bottom: 0;
 }
 
 p {
-
   text-align: left;
-  padding: 1em;
+  padding-top: 0.5em;
+  /*padding-bottom: 0.em;*/
+  margin-top: 0;
 }
 
 table {
@@ -40,46 +50,96 @@ table {
     text-align: left;
 }
 
-
 td {
     height: 50px;
-  vertical-align: top;
+    vertical-align: top;
 }
 
 td p {
   padding: 0;
 }
 
-.blurb {
+a {
+  transition: color .4s;
+  color: white;
+  text-decoration: none;
+}
 
-  text-align: center;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  margin-top: 0;
+a:link,
+a:visited {
+  color: white;
+}
+
+a:hover   {
+  color: #D4D4D4;
+  font-weight:bold;
+}
+
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.link {
+  text-decoration: none;
 }
 
 
-
-/*navigation styling*/
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline;
-  padding-bottom: 0;
-}
+/*navigation*/
 
 .fixed {
   position:fixed;
   top: 0;
-  background-color: #AE9779;
+  background-color:  #AE9779;
   max-width: 960px;
   margin: 0;
-  padding:0:
+  padding:0;
+
+
+}
+
+
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AE9779;
+    display: inline-block;
+}
+
+li {
+    float: left;
+    margin-bottom: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #280E09;
+}
+
+/*links*/
+
+
+
+
+hr {
+    border-width: 2px;
+}
+
+.footer {
+  margin-top: 1em;
+  margin-bottom: 2em;
+
 }
 
 
@@ -89,8 +149,6 @@ li {
     position:fixed;
     opacity: 0.8;
   }
-
-
 
 img {
   /*Jack's favourites - width auto, max-width 100% and max height the way you want it*/
@@ -144,16 +202,7 @@ img {
   }
 }
 
-  .container {
 
-    max-width: 960px;
-    min-height: 100px;
-    background-color: #AE9779;
-    opacity:0.9;
-    margin: 0 auto;
-    color: #280E09;
-    padding: 0px;
-  }
 
 
 /*THIS IS OUR GRID SYSTEM*/
