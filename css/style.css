@@ -1,29 +1,17 @@
 /*main text elements*/
 
-.container {
 
-  max-width: 960px;
-  min-height: 100px;
-  background-color: #AE9779;
-  opacity:0.9;
-  margin: 0 auto;
-  color: #280E09;
-  padding: 0px;
-}
 
 body {
     background-color: #AE9779;
-    /*background-image: url("http://content.ngv.vic.gov.au/col-images/api/EPUB001683/1280");*/
-    background-repeat: repeat-x;
-    background-position: fixed;
     color: white;
     text-align: center;
-
 }
 
 h1 {
   margin-top: 0;
 }
+
 
 h1, h2 {
   display: block;
@@ -40,13 +28,13 @@ h3 {
 p {
   text-align: left;
   padding-top: 0.5em;
-  /*padding-bottom: 0.em;*/
   margin-top: 0;
 }
 
 table {
     width: 75%;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 
@@ -98,8 +86,6 @@ a:active  {
 
 }
 
-
-
 ul {
     list-style-type:none;
     margin: 0;
@@ -122,13 +108,9 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #280E09;
 }
-
-/*links*/
-
 
 
 
@@ -142,161 +124,188 @@ hr {
 
 }
 
-
-/*images*/
-
-  .shear{
-    position:fixed;
-    opacity: 0.8;
-  }
-
-img {
-  /*Jack's favourites - width auto, max-width 100% and max height the way you want it*/
-  /*width: auto; /*stops distortion */*/
-  /*max-width: 100%;*/
-  /*max-width: 200px;  */
-
-
-
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
-}
-
-#dreams {
-  /*Jack's favourites - width auto, max-width 100% and max height the way you want it*/
-  /*width: auto; /*stops distortion */*/
-  /*max-width: 100%;*/
-  /*max-width: 200px;  */
-
-  	max-width: 100%;
-  	height: auto;
-    padding-top: 8em;
-    padding-bottom: 2em;
-    opacity: 1;
-
-
-  /*max-height: 300px;
-  display: block;
-  margin: 0 auto;*/
-}
-
-
-
 .biophoto {
-  /*position: relative;*/
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*top: -10px;*/
-
+  width:auto;
+  max-height: 300px;
+  display: inline;;
+  margin: 0 auto;
   float: left;
   padding: 1em;
 
+};
+
+img#dreamy {
+color: red;
 }
-
-
 
 @media (max-width: 300px) {
   h1 {
-    display:none;
+    display: none;
   }
 }
 
+/*@media (max-width: 700px) {
+  body {
+    background-color: green;
+  }
+}*/
 
+.container {
+  max-width: 960px;
+  min-height: 200px;
+  background-color: #AE9779;
+  margin: 0 auto;
 
+}
 
-/*THIS IS OUR GRID SYSTEM*/
+/* GRID SYSTEM */
 
-*{
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
-.col{
-  float:left;
+.col {
+  float: left;
   min-height: 100px;
-  /*border: 10px solid #280E09;*/
   background: #AE9779;
-  -webkit-transition:1s;
-  -moz-transition:1s;
-  -ms-transition:1s;
-  -o-transition:1s;
-  transition:1s;
-
+   border-bottom: 2px solid white;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -ms-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
-
-.col-2, {
-  width: 16.6666666%;
-  width: webkit-calc(100% / 6);
-  width: moz-calc(100% / 6);
-  width: ms-calc(100% / 6);
-  width: o-calc(100% / 6);
-  }
-
-.col-3 {
-  width: 25%;
-}
-
-/*calc - new way of doing this but need a fallback in case an old browser */
-.col-4 {
-  width: 33.3333333%;
-  width: -webkit-calc(100%/3);
-  width: -moz-calc(100%/3);
-  width: -ms-calc(100%/3);
-  width: -o-calc(100%/3);
-  width: calc(100%/3);
-  }
-
-  .col-5{
-    width: 20%;
-  }
-
-  .col-6{
-    width: 50%;
-  }
 
 
 .col-12 {
   width: 100%;
-  /*height: 50%;*/
+}
+
+@media (max-width: 420px){
+  .col {
+    width: 100%;
+  }
+  .tiny-col-12 {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 760px) and (min-width: 420px){ /* sm- */
+  .col {
+    width: 100%;
+  }
+  .sm-col-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 761px) { /* md- */
+  .col {
+    width: 100%;
+  }
+  .md-col-12 {
+    width: 100%;
+  }
+}
+/* DESKTOP VIEW */
+@media (max-width: 1200px) and (min-width: 961px) { /* lg- */
+  .col {
+    /*background: lemonchiffon;*/
   }
 
-
-
-  @media (max-width: 760px)and(min-width:761px){
-    .col{
-    background: hotpink;
-    }
-    .sm-col-4 {
-      width: 33.3333333%;
-      width: -webkit-calc(100%/3);
-      width: -moz-calc(100%/3);
-      width: -ms-calc(100%/3);
-      width: -o-calc(100%/3);
-      width: calc(100%/3);
-      }
-
-      .sm-col-6{
-        width: 50%;
-      }
-      .sm-col-12 {
-      width: 100%;
-      }
   }
-  @media (max-width: 960px)and(min-width:961px){
-    .col{
-    background: chartreuse;
-    }
-    .md-col-6{
-      width: 50%;
-    }
+  .lg-col-12 {
+    width: 100%;
+  }
+}@media (max-width: 300px) {
+  h1 {
+    display: none;
+  }
+}
+
+/*@media (max-width: 700px) {
+  body {
+    background-color: green;
+  }
+}*/
+
+.container {
+  max-width: 960px;
+  min-height: 200px;
+  background-color: #AE9779;
+  margin: 0 auto;
+  color: white;
+}
+
+/* GRID SYSTEM */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col {
+  float: left;
+  min-height: 100px;
+  /*border: 10px solid #280E09;;*/
+  background: #AE9779;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -ms-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
+
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 420px){ /* sm- */
+  .col {
+    /*background: red;*/
+    width: 100%;
+  }
+  .tiny-col-12 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 760px) and (min-width: 420px){ /* sm- */
+  .col {
+    /*background: hotpink;*/
+    width: 100%;
+  }
+  .sm-col-12 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 761px) { /* md- */
+  .col {
+    /*background: chartreuse;*/
+  }
+  .md-col-12 {
+    width: 100%;
+  }
+}
+/* DESKTOP VIEW */
+@media (max-width: 1200px) and (min-width: 961px) { /* lg- */
+  .col {
+    /*background: lemonchiffon;*/
+  }
 
   }
-  @media (max-width: 960px){
-    .col{
-      background: lemonchiffon
-    }
+  .lg-col-12 {
+    width: 100%;
   }
+}
